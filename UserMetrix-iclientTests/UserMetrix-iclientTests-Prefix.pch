@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'UserMetrix-iclientTests' target in the 'UserMetrix-iclientTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
