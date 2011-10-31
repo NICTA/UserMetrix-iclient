@@ -30,8 +30,8 @@
 {
     NSLog(@"************ Test Message");
 
-	[UserMetrix configure:3 canSendLogs:false];
-	STAssertEquals([UserMetrix projectID], (NSUInteger) 3, @"Unable to configure logs.");
+	[UserMetrix configure:1 canSendLogs:false];
+	STAssertEquals([UserMetrix projectID], (NSUInteger) 1, @"Unable to configure logs.");
 	STAssertFalse([UserMetrix canSendLogs], @"Sending logs should be false by default.");
     
 	[UserMetrix setCanSendLogs:true];

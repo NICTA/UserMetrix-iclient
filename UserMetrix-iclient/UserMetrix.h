@@ -1,10 +1,30 @@
-//
-//  UserMetrix.h
-//  UserMetrix-iclient
-//
-//  Created by Clinton Freeman on 2011/08/01.
-//  Copyright 2011 UserMetrix Pty Ltd. All rights reserved.
-//
+/*
+ * UserMetrix.h
+ * UserMetrix-iclient
+ *
+ * VERSION: 1.0.1
+ *
+ * Copyright (c) 2011 UserMetrix Pty Ltd. All rights reserved.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 
@@ -26,6 +46,11 @@
 /// Call this method when your application starts, supply your usermetrix ID as the parameter.
 ///
 + (void) configure:(NSUInteger)newProjectID canSendLogs:(BOOL)canSendLogs;
+
+///
+/// Call this method when your application resumes, supply your userMetrix ID as the paramter.
+///
++ (void) resume:(NSUInteger)newProjectID canSendLogs:(BOOL)canSendLogs;
 
 ///
 /// Call this method when your application closes, it packages up all the relevant usage information
