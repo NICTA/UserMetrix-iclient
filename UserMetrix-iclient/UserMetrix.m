@@ -2,8 +2,6 @@
  * UserMetrix.m
  * UserMetrix-iclient
  *
- * VERSION: 1.0.1
- *
  * Copyright (c) 2011 UserMetrix Pty Ltd. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -253,7 +251,7 @@
 	[logHandle writeData:[[NSString stringWithFormat:@"    source: %@\n", srcFile] dataUsingEncoding:NSUTF8StringEncoding]];
 	[logHandle seekToEndOfFile];
 
-	[logHandle	writeData:[[NSString stringWithFormat:@"    message: %@\n", message] dataUsingEncoding:NSUTF8StringEncoding]];
+	[logHandle	writeData:[[NSString stringWithFormat:@"    message: \"%@\"\n", message] dataUsingEncoding:NSUTF8StringEncoding]];
 	[logHandle seekToEndOfFile];
 }
 

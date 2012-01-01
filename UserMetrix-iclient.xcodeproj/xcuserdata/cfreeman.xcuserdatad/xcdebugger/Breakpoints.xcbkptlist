@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "UserMetrix-iclientTests/UserMetrix_iclientTests.m"
-         timestampString = "336372321.462957"
+         timestampString = "347152978.774672"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "12"
-         endingLineNumber = "12">
+         startingLineNumber = "34"
+         endingLineNumber = "34">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

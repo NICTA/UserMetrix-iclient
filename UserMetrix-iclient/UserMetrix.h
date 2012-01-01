@@ -2,8 +2,6 @@
  * UserMetrix.h
  * UserMetrix-iclient
  *
- * VERSION: 1.0.1
- *
  * Copyright (c) 2011 UserMetrix Pty Ltd. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining
