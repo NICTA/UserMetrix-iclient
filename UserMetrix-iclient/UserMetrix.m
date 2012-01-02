@@ -72,6 +72,10 @@
 /// This method will close the temporary log file on disk.
 ///
 - (void) closeLog {
+    long currentTime = (long)((CACurrentMediaTime() - startTime) * 1000.0f);
+	[logHandle writeData:[[NSString stringWithFormat:@"duration: %i\n", currentTime] dataUsingEncoding:NSUTF8StringEncoding]];
+	[logHandle seekToEndOfFile];
+
 	[logHandle closeFile];
 	[logHandle release];
 }
